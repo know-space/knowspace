@@ -11,7 +11,6 @@ authors = [
 
 [project.optional-dependencies]
 dev = [
-    "poetry",
     "black",
     "pre-commit",
     "isort",
