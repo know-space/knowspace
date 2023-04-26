@@ -1,10 +1,9 @@
 class Vector:
     def __init__(self, *args) -> None:
-        """object used to perform vector math
-        """
+        """object used to perform vector math"""
         self.elements: tuple = args[:]
         self.dimension: float = len(self.elements)
-        
+
     def plus(self, vec_to_add: "Vector") -> "Vector":
         """performs element-wise addition
 
@@ -14,4 +13,3 @@ class Vector:
         :rtype: Vector
         """
         return Vector(*[a + b for a, b in zip(self.elements, vec_to_add.elements)])
-    
